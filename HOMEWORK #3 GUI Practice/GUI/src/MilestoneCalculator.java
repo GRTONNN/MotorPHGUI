@@ -15,7 +15,7 @@ public class MilestoneCalculator extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new GridLayout(5, 2));
         
-        // Initialize labels and text fields
+        
         milestone1Label = new JLabel("Milestone 1 (25%): ");
         milestone1TextField = new JTextField();
         milestone2Label = new JLabel("Milestone 2 (40%): ");
@@ -26,7 +26,7 @@ public class MilestoneCalculator extends JFrame {
         totalGradeTextField = new JTextField();
         totalGradeTextField.setEditable(false);
         
-        // Initialize calculate button
+        
         calculateButton = new JButton("Calculate");
         calculateButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -34,7 +34,7 @@ public class MilestoneCalculator extends JFrame {
             }
         });
         
-        // Add components to frame
+        
         add(milestone1Label);
         add(milestone1TextField);
         add(milestone2Label);
@@ -43,13 +43,13 @@ public class MilestoneCalculator extends JFrame {
         add(terminalAssessmentTextField);
         add(totalGradeLabel);
         add(totalGradeTextField);
-        add(new JLabel()); // Empty label for spacing
+        add(new JLabel()); 
         add(calculateButton);
         
         setVisible(true);
     }
     
-    // Calculate the total grade and display it in the total grade text field
+    
     private void calculateTotalGrade() {
         try {
             double milestone1Grade = Double.parseDouble(milestone1TextField.getText());
